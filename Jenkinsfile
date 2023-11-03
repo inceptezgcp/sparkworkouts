@@ -10,8 +10,8 @@ pipeline {
       steps {
         sh '''
           ls -lrt
-          #gcloud auth activate-service-account --key-file="$GCLOUD_CREDS"
-          #gsutil cp /var/jenkins_home/custs gs://inceptez-salesdata/
+          gcloud auth activate-service-account --key-file="$GCLOUD_CREDS"
+          gsutil cp *.py gs://inceptez-pyspark/
           echo 'File Copied into GCS bucket'
         '''
       }
