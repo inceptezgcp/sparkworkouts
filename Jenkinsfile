@@ -19,7 +19,7 @@ pipeline {
   }
   post {
     always {
-      sh 'gcloud auth revoke $CLIENT_EMAIL'
+      sh '#gcloud auth revoke $CLIENT_EMAIL'
     }
   }
 }
