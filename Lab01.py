@@ -11,4 +11,4 @@ rdd = sc.parallelize(lst)
 total = rdd.sum()
 
 print("Total:{}".format(total))
-
+print("Completed")
