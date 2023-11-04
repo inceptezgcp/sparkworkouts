@@ -2,6 +2,7 @@ from pyspark import SparkContext
 from pyspark import SparkConf
 
 print("Welcome to spark using python")
+print("Welcome to learn Spark")
 
 sconf = SparkConf().setAppName("First-Spark").setMaster("local")
 
